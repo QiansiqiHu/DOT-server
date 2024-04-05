@@ -14,7 +14,7 @@ These two servers are equipped with graphics cards, and users will use them for 
 |RAM                    |32GB DDR5-4800 ECC RDIMM [x16]|
 |CPU|Intel® Xeon® Gold 5416S 30M Cache, 2.00 GHz (16C32T) [x2]|
 |GPU|NVIDIA GeForce RTX 4090 24GB (CUDA 16,384 / Tensor 512) [x8]|
-|Storage|Hard Disk Drive [x8] on 137.189.75.113|
+|Storage|Hard Disk Drive [18TB x8] on 137.189.75.113|
 
 #### 137.189.75.113
 This server is used for the storage of data. Users will never have to access this server, while their data will be automatically stored in its hard disks.
