@@ -24,5 +24,5 @@ This server is used for the storage of data. Users will never have to access thi
 |Hard Disk Drive|18TB SAS 12Gb/s 7.2K rpm Seagate Enterprise [x8]|
 
 
-#### Access to the server
+## Access to the server
 We have provided users with a very convenient way of accessing the server simply by using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R. Meanwhile, please make sure that the **internet cable** is available at your workplace or that you can use the **CUHK VPN** service. Otherwise, you will not be able to connect to the server. 
