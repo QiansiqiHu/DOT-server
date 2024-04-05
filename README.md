@@ -22,3 +22,7 @@ This server is used for the storage of data. Users will never have to access thi
 |Component| Description|
 |---------|------------|
 |Hard Disk Drive|18TB SAS 12Gb/s 7.2K rpm Seagate Enterprise [x8]|
+
+
+#### Access to the server
+We have provided users with a very convenient way of accessing the server by simply using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R.
