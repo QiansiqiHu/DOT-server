@@ -30,4 +30,4 @@ We have provided users with a very convenient way of accessing the server simply
 1. First, input `137.189.75.115` on your web server, and you will be guided to the following page:
 
 
-2. 
+2. Then input the username and password that you have received from the email.
