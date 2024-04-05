@@ -25,4 +25,4 @@ This server is used for the storage of data. Users will never have to access thi
 
 
 #### Access to the server
-We have provided users with a very convenient way of accessing the server by simply using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R.
+We have provided users with a very convenient way of accessing the server simply by using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R.
