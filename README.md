@@ -35,4 +35,4 @@ After ensuring that the network environment is correct, please follow the steps 
 
 2. Then input the username and password that you have received from the email, and you will be guided to the JupyterLab interface. Below is an example:
 
-![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/interface.png)
+![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyterlab.png)
