@@ -3,7 +3,7 @@ This repository provides an overview of servers in the department of Decisions, 
 
 ## Configuration
 
-##### 137.189.75.114 & 137.189.75.115
+#### 137.189.75.114 & 137.189.75.115
 |Component| Description|
 |---------|------------|
 |Operating System       |Ubuntu 22.04.3 LTS|
