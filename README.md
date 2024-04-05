@@ -1,9 +1,13 @@
 # DOT-server
 This repository provides an overview of servers in the department of Decisions, Operations and Technology, including 137.189.75.113, 137.189.75.114 and 137.189.75.115. Guidelines on how to use these servers are also introduced.
 
+**IMPORTANT: During the pilot run, we will only open 137.189.75.115 to new users. For ease of management, non-administrator users should not use package management tools such as `pip`, `pip3`,\ and `conda`. If you are familiar with virtual enviroments, or have additional requirements regarding the versions of Python and R or the installation of libraries, please contact the administrator.**
+
 ## Configuration
 
 #### 137.189.75.114 & 137.189.75.115
+These two servers are equipped with graphics cards, and users will use them for experiments. Below is the list of components for the two servers. They are identical in configuration.
+
 |Component| Description|
 |---------|------------|
 |Operating System       |Ubuntu 22.04.4 LTS|
