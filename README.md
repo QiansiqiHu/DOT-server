@@ -28,6 +28,6 @@ This server is used for the storage of data. Users will never have to access thi
 We have provided users with a very convenient way of accessing the server simply by using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R. Meanwhile, please make sure that the **internet cable** is available at your workplace or that you can use the **CUHK VPN** service. Otherwise, you will not be able to connect to the server. 
 
 1. First, input `137.189.75.115` on your web server, and you will be guided to the following page:
-
+![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/login.png)
 
 2. Then input the username and password that you have received from the email.
