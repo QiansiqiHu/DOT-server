@@ -17,3 +17,8 @@ These two servers are equipped with graphics cards, and users will use them for 
 |Storage|Hard Disk Drive [x8] on 137.189.75.113|
 
 #### 137.189.75.113
+This server is used for the storage of data. Users will never have to access this server, while their data will be automatically stored in its hard disks.
+
+|Component| Description|
+|---------|------------|
+|Hard Disk Drive|18TB SAS 12Gb/s 7.2K rpm Seagate Enterprise [x8]|
