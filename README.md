@@ -8,3 +8,5 @@ This repository provides an overview of servers in the department of Decisions, 
 |---------|------------|
 |Operating System       |Ubuntu 22.04.4 LTS|
 |RAM                    |32GB DDR5-4800 ECC RDIMM [x16]|
+|CPU|Intel® Xeon® Gold 5416S 30M Cache, 2.00 GHz (16C32T) [x2]|
+|GPU|NVIDIA GeForce RTX 4090 24GB (CUDA 16,384 / Tensor 512) [x8]|
