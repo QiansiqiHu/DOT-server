@@ -54,3 +54,5 @@ IRkernel::installspec()         ## install R kernel
 Quit R with `q()` and initiate a new launcher, you will find that the R kernel is available:
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/R_kernel.png)
+
+5. With everything prepared, now you can start coding with GPU on the server! More details regarding the Python environment can be find here. For more advanced operations using **ssh*, a tutorial is provided for your reference.
