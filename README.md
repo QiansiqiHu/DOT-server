@@ -36,3 +36,9 @@ After ensuring that the network environment is correct, please follow the steps 
 2. Then input the username and password that you have received from the email, and you will be guided to the JupyterLab interface. Below is an example:
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyterlab.png)
+
+3. For security reasons, you can reset the password of your jupyter account by opening the terminal located at the bottom of the interface and then execute the following command:
+```
+passwd
+```
+Then the terminal will guide you to reset your password. Later you will only be able to log in with the new password.
