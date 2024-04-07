@@ -37,7 +37,7 @@ After ensuring that the network environment is correct, please follow the steps 
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyterlab.png)
 
-3. For security reasons, you can reset the password of your jupyter account by opening the terminal located at the bottom of the interface and then execute the following command:
+3. For security reasons, you can reset the password of your jupyter account by opening the terminal located at the bottom of the interface and then executing the following command:
 ```
 passwd
 ```
