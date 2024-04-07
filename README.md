@@ -42,3 +42,12 @@ After ensuring that the network environment is correct, please follow the steps 
 passwd
 ```
 Then the terminal will guide you to reset your password. Later you will only be able to log in with the new password.
+
+4. `R` has also been installed on server. You can access R kernels by running the following command in terminal.
+
+```
+R          ## start R programming
+```
+```
+IRkernel::installspec()         ## install R kernel
+```
