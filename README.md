@@ -47,7 +47,6 @@ Then the terminal will guide you to reset your password. Later you will only be 
 
 ```
 R          ## start R programming
-```
-```
+
 IRkernel::installspec()         ## install R kernel
 ```
