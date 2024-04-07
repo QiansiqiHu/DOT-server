@@ -46,7 +46,10 @@ Then the terminal will guide you to reset your password. Later you will only be 
 4. `R` has also been installed on server. You can access R kernels by running the following command in terminal.
 
 ```
-R          ## start R programming
+R                               ## start R programming
 
 IRkernel::installspec()         ## install R kernel
 ```
+
+Quit R with `q()` and initiate a new launcher, you will find that the R kernel is available:
+
