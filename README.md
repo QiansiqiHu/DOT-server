@@ -25,6 +25,9 @@ This server is used for the storage of data. Users will never have to access thi
 
 
 ## Access to the server
+
+Users can apply for access to the server by filling out the [registration form](https://docs.google.com/forms/d/e/1FAIpQLSeT2iQ311o1I-IW_9hPJ3kP0iEuOM8kqR8Lfs-KphaNBxeGvQ/viewform?usp=sf_link).
+
 We have provided users with a very convenient way of accessing the server simply by using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R. Meanwhile, please make sure that the **internet cable** is available at your workplace or that you can use the **CUHK VPN** service. Otherwise, you will not be able to connect to the server. 
 
 After ensuring that the network environment is correct, please follow the steps below to connect to the server.
