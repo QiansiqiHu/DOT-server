@@ -1,5 +1,5 @@
-# DOT-server
-This repository provides an overview of servers in the department of Decisions, Operations and Technology, including 137.189.75.113, 137.189.75.114 and 137.189.75.115. Guidelines on how to use these servers are also introduced.
+# CUHK Business School DOT-Server
+This repository provides an overview of servers in the Department of Decisions, Operations and Technology, CUHK Business School, including 137.189.75.113, 137.189.75.114 and 137.189.75.115. Guidelines on how to use these servers are also introduced.
 
 **IMPORTANT: During the pilot run, we will only open 137.189.75.115 to new users. In principle, base environments of users are independent from each other, and hence users can install libraries according to their own needs. If you find any problems regarding the management of libraries and packages, please contact the administrator.**
 
