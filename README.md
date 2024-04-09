@@ -65,10 +65,10 @@ Quit R with `q()` and initiate a new launcher, you will find that the R kernel i
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/R_kernel.png)
 
-5. With everything prepared, now you can start coding with GPU on the servers!
+5. With everything prepared, now you can start coding with GPU on the servers! 
 
 
-For more advanced operations using **ssh**, a [tutorial](https://github.com/QiansiqiHu/DOT-server/blob/main/SSH_instructions.pdf) is provided for your reference. If you want to upload your own data to the server, you can use the `scp` command or tools like WinSCP.
+For more advanced operations using **ssh**, a [tutorial](https://github.com/QiansiqiHu/DOT-server/blob/main/SSH_instructions.pdf) is provided for your reference. If you want to upload your own data to the server, you can simply drag files onto Jupyterhub. By **ssh**, you can use the `scp` command or tools like WinSCP to upload files. If you want to download data onto the server, you may utilize `wget`, which is commonly used for file downloads in Linux systems.
 
 # Contact
 
