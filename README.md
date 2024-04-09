@@ -67,3 +67,8 @@ Quit R with `q()` and initiate a new launcher, you will find that the R kernel i
 
 
 For more advanced operations using **ssh**, a [tutorial](https://github.com/QiansiqiHu/DOT-server/blob/main/SSH_instructions.pdf) is provided for your reference. If you want to upload your own data to the server, you can use the `scp` command or tools like WinSCP.
+
+# Contact
+
+If you have any additional questions about the DOT-Server of CUHK Business School, please contact us at 1155208353@link.cuhk.edu.hk or philipzhang@cuhk.edu.hk.
+
