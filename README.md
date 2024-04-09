@@ -43,7 +43,7 @@ After the network environment is correctly set, please follow the steps below to
 
 2. Then input the username and password that you have received from the email sent by the server administrator, and you will be guided to the JupyterLab interface. Below is an example:
 
-![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyterlab.png)
+![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyter.png)
 
 3. Please reset the password of your Jupyter account by opening the terminal located at the bottom of the interface and then executing the following command:
 ```
