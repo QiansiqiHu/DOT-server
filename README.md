@@ -9,7 +9,7 @@ This repository provides an overview of servers in the Department of Decisions, 
 ## Configuration
 
 #### GPU Servers (137.189.75.114 & 137.189.75.115)
-These two servers are equipped with graphics cards (NVidia 4090). You may use them for computational experiments. Below is the summary of these two servers. They are identical in configuration.
+These two servers are equipped with graphics cards (NVIDIA 4090). You may use them for computational experiments. Below is the summary of these two servers. They are identical in configuration.
 
 |Component| Description|
 |---------|------------|
