@@ -31,7 +31,7 @@ This server is used for data storage. You will NOT have direct access to this se
 
 You can apply for the access to the server by filling out this [**registration form**](https://docs.google.com/forms/d/e/1FAIpQLSeT2iQ311o1I-IW_9hPJ3kP0iEuOM8kqR8Lfs-KphaNBxeGvQ/viewform?usp=sf_link).
 
-We have provided users with a convenient way of accessing the server through web browsers. They can log in and utilize JupyterHub for computational experiments in `Python` and `R`. If you need to use some other softwares (e.g., `Stata` or `MatLab`), please submit your request via [this link](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). 
+We have provided users with a convenient way of accessing the server through web browsers. They can log in and utilize JupyterHub for computational experiments in `Python` and `R`. If you need to use some other softwares (e.g., `Stata` or `MATLAB`), please submit your request via [this link](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). 
 
 **Please make sure that the internet cable (in CYT) is available at your workplace OR that you have connected onto the [CUHK VPN service](https://www.itsc.cuhk.edu.hk/all-it/wifi-and-network/cuhk-vpn/). Otherwise, you will NOT be able to connect to the server for safety reasons.** 
 
