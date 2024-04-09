@@ -72,7 +72,7 @@ For more advanced operations using **ssh**, a [tutorial](https://github.com/Qian
 
 With regard to **data transmission**, 
 * If you want to upload your own data to the server, you can simply drag files onto Jupyterhub. By **ssh**, you can use the `scp` command or tools like WinSCP to upload files.
-* If you want to download data from the server to your local machine, on Jupyterhub, you can simply right-click on the file and then select 'Download'. By **ssh**, you should use `scp` or tools like WinSCP.
+* If you want to download data from the server to your local machine, on Jupyterhub you can simply right-click on the file and then select 'Download'. By **ssh**, you should use `scp` or tools like WinSCP.
 * If you want to download data from web to the server, you may utilize `wget`, which is commonly used for file downloads in Linux systems.   
 
 # Contact
