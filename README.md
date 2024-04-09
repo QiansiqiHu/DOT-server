@@ -31,15 +31,17 @@ This server is used for data storage. You will NOT have direct access to this se
 
 You can apply for the access to the server by filling out this [**registration form**](https://docs.google.com/forms/d/e/1FAIpQLSeT2iQ311o1I-IW_9hPJ3kP0iEuOM8kqR8Lfs-KphaNBxeGvQ/viewform?usp=sf_link).
 
-We have provided users with a convenient way of accessing the server through web browsers. They can log in and utilize JupyterHub for experiments related to Python and R. Meanwhile, please make sure that the **internet cable** is available at your workplace or that you can use the **CUHK VPN** service. Otherwise, you will not be able to connect to the server. 
+We have provided users with a convenient way of accessing the server through web browsers. They can log in and utilize JupyterHub for computational experiments in Python and R. If you need to use some other softwares (e.g., Stata or MatLab), please submit your request via [this link](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). 
 
-After ensuring that the network environment is correct, please follow the steps below to connect to the server.
+**Please make sure that the internet cable (in CYT) is available at your workplace OR that you have connected onto the [CUHK VPN service](https://www.itsc.cuhk.edu.hk/all-it/wifi-and-network/cuhk-vpn/). Otherwise, you will NOT be able to connect to the server for safety reasons.** 
+
+After the network environment is correctly set, please follow the steps below to connect to the server.
 
 1. First, input `137.189.75.115` on your web server, and you will be guided to the following page:
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/login.png)
 
-2. Then input the username and password that you have received from the email, and you will be guided to the JupyterLab interface. Below is an example:
+2. Then input the username and password that you have received from the email sent by the server administrator, and you will be guided to the JupyterLab interface. Below is an example:
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyterlab.png)
 
