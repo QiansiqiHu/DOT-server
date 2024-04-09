@@ -4,12 +4,12 @@
 
 This repository provides an overview of servers in the Department of Decisions, Operations and Technology, CUHK Business School, including two GPU servers (IP addresses: 137.189.75.114 and 137.189.75.115) and one Storage server (ID address: 137.189.75.113). Guidelines on how to use these servers are also introduced.
 
-**IMPORTANT: During the pilot run, we will only open 137.189.75.115 to new users. In principle, the base environments of users are independent from each other, and hence users can install libraries according to their own needs. If you find any problems regarding the management of libraries and packages, please contact the administrator via [this link](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link), where users can report issues/submit your customized requests regarding server functions.**
+**IMPORTANT: During the pilot run, we will only open 137.189.75.115 to new users. In principle, the base environments of the users are independent from each other, and hence you can install libraries according to your own needs. If you find any problems regarding the management of libraries and packages, please contact the administrator via [this link](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link), where users can report issues/submit your customized requests regarding server functions.**
 
 ## Configuration
 
 #### GPU Servers (137.189.75.114 & 137.189.75.115)
-These two servers are equipped with graphics cards (NVidia 4049). You may use them for computational experiments. Below is the summary of components for the two servers. They are identical in configuration.
+These two servers are equipped with graphics cards (NVidia 4049). You may use them for computational experiments. Below is the summary of these two servers. They are identical in configuration.
 
 |Component| Description|
 |---------|------------|
@@ -19,19 +19,19 @@ These two servers are equipped with graphics cards (NVidia 4049). You may use th
 |GPU|NVIDIA GeForce RTX 4090 24GB (CUDA 16,384 / Tensor 512) [x8]|
 |Storage|Hard Disk Drive [18TB x8] on 137.189.75.113|
 
-#### 137.189.75.113
-This server is used for the storage of data. Users will never have to access this server, while their data will be automatically stored in its hard disks.
+#### Storage Server (137.189.75.113)
+This server is used for data storage. You will NOT have direct access to this server, but your data will be automatically stored in its hard disks.
 
 |Component| Description|
 |---------|------------|
 |Hard Disk Drive|18TB SAS 12Gb/s 7.2K rpm Seagate Enterprise [x8]|
 
 
-## Access to the server
+## Access to Server
 
-Users can apply for access to the server by filling out the [registration form](https://docs.google.com/forms/d/e/1FAIpQLSeT2iQ311o1I-IW_9hPJ3kP0iEuOM8kqR8Lfs-KphaNBxeGvQ/viewform?usp=sf_link).
+You can apply for the access to the server by filling out this [**registration form**](https://docs.google.com/forms/d/e/1FAIpQLSeT2iQ311o1I-IW_9hPJ3kP0iEuOM8kqR8Lfs-KphaNBxeGvQ/viewform?usp=sf_link).
 
-We have provided users with a very convenient way of accessing the server simply by using web browsers. They can log in and utilize JupyterHub for experiments related to Python and R. Meanwhile, please make sure that the **internet cable** is available at your workplace or that you can use the **CUHK VPN** service. Otherwise, you will not be able to connect to the server. 
+We have provided users with a convenient way of accessing the server through web browsers. They can log in and utilize JupyterHub for experiments related to Python and R. Meanwhile, please make sure that the **internet cable** is available at your workplace or that you can use the **CUHK VPN** service. Otherwise, you will not be able to connect to the server. 
 
 After ensuring that the network environment is correct, please follow the steps below to connect to the server.
 
