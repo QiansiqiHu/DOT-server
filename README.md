@@ -45,6 +45,8 @@ After the network environment is correctly set, please follow the steps below to
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyter.png)
 
+**IMPORTANT**: Please ensure that you have access to the folder named `yourusername-dot` (as marked in the screenshot above), and perform all experiments and data storage within it. This folder is mounted to remote hard disks, enabling users to enjoy ample storage space.
+
 3. Please reset the password of your Jupyter account by opening the terminal located at the bottom of the interface and then executing the following command:
 ```
 passwd
