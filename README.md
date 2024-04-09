@@ -71,9 +71,9 @@ Quit R with `q()` and initiate a new launcher, you will find that the R kernel i
 For more advanced operations using **ssh**, a [tutorial](https://github.com/QiansiqiHu/DOT-server/blob/main/SSH_access.pdf) is provided for your reference. 
 
 With regard to data transmission, 
-1. If you want to upload your own data to the server, you can simply drag files onto Jupyterhub. By **ssh**, you can use the `scp` command or tools like WinSCP to upload files.
-2. If you want to download data from the server to your local machine, you can simply right-click on the file and then select 'Download'.
-3. If you want to download data from web to the server, you may utilize `wget`, which is commonly used for file downloads in Linux systems.   
+* If you want to upload your own data to the server, you can simply drag files onto Jupyterhub. By **ssh**, you can use the `scp` command or tools like WinSCP to upload files.
+* If you want to download data from the server to your local machine, you can simply right-click on the file and then select 'Download'.
+* If you want to download data from web to the server, you may utilize `wget`, which is commonly used for file downloads in Linux systems.   
 
 # Contact
 
