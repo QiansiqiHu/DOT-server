@@ -43,11 +43,11 @@ After the network environment is correctly set, please follow the steps below to
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/login.png)
 
-2. Then input the username and password that you have received from the email sent by the server administrator, and you will be guided to the JupyterLab interface. Below is an example:
+2. Then input the username that you have received from the email sent by the server administrator, and **create a password by yourself**. (Please note that the password you create will be used for every future login, so you need to remember it). Click "Launch Server", then you will be guided to the JupyterLab interface. Below is an example:
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/jupyter.png)
 
-**IMPORTANT**: Please ensure that you have access to the folder named `yourusername-dot` (as marked in the screenshot above), and perform all experiments and data storage within it. This folder is mounted to remote hard disks, enabling users to enjoy ample storage space.
+**IMPORTANT**: Please ensure that you have access to the folder named `yourusername-dot` (as marked in the screenshot above), and perform all experiments and data storage within it. This folder is mounted to remote hard disks, enabling users to enjoy ample storage space. 
 
 3. Please reset the password of your Jupyter account by opening the terminal located at the bottom of the interface and then executing the following command:
 ```
