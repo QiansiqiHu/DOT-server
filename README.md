@@ -49,13 +49,7 @@ After the network environment is correctly set, please follow the steps below to
 
 **IMPORTANT**: Please ensure that you have access to the folder named `yourusername-dot` (as marked in the screenshot above), and perform all experiments and data storage within it. This folder is mounted to remote hard disks, enabling users to enjoy ample storage space. 
 
-3. Please reset the password of your Jupyter account by opening the terminal located at the bottom of the interface and then executing the following command:
-```
-passwd
-```
-The terminal will then guide you to reset your password. 
-
-4. `R` has also been installed on the servers. You can access `R` kernels by running the following command in terminal.
+3. `R` has also been installed on the servers. You can access `R` kernels by running the following command in terminal.
 
 ```
 R                               ## start R programming
@@ -67,7 +61,7 @@ Quit R with `q()` and initiate a new launcher, you will find that the R kernel i
 
 ![image](https://github.com/QiansiqiHu/DOT-server/blob/main/img/R_kernel.png)
 
-5. With everything prepared, now you can start coding with GPU on the servers! 
+4. With everything prepared, now you can start coding with GPU on the servers! 
 
 
 For more advanced operations using **ssh**, a [tutorial](https://github.com/QiansiqiHu/DOT-server/blob/main/SSH_access.pdf) is provided for your reference. 
