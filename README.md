@@ -73,5 +73,5 @@ With regard to **data transmission**,
 
 # Contact
 
-If you have any additional questions about the DOT-Server of CUHK Business School, please contact us at 1155208353@link.cuhk.edu.hk or philipzhang@cuhk.edu.hk.
+If you have any additional questions about the DOT-Server of CUHK Business School, please contact us at dotserver@cuhk.edu.hk.
 
