@@ -9,6 +9,7 @@
 >
 > [January 20, 2025]
 > The server (137.189.75.115) has been successfully restored. All services are up and running.
+> 
 > [January 18, 2025]
 > IP address 137.189.75.115 is currently inaccessible from campus network (both browser and SSH connections affected). We are working with IT staff to identify and > resolve the connectivity issue. We will notify all users once service is restored.
 
