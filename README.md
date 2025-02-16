@@ -59,7 +59,7 @@ This server is used for data storage. You will NOT have direct access to this se
 
 ### Python and R
 
-Python is fully supported on our GPU servers and ready to use immediately through either Jupyter Notebook or command line interface. R is also available to all registered users through the same interfaces, though it requires a brief one-time configuration during your first use (See step 3 in the below subsection **"Method 1. Web Access"**). 
+Python is fully supported on our GPU servers and ready to use immediately through either Jupyter Notebook or command line interface. R is also available to all registered users through the same interfaces, though it requires a brief one-time configuration during your first use (See step 3 in the below subsection **"Method 1. Web Access"** and this [guide](R_guide.md) for more instructions). 
 
 ### Stata (Limited Availability)
 
@@ -101,13 +101,12 @@ Using Jupyter requires no special software other than a browser. Follow the belo
 
 3. `R` has also been installed on the servers. You can access `R` kernels by running the following command in terminal.
 
+```shell
+$ R                               ## start R programming
+> IRkernel::installspec()         ## install R kernel
 ```
-R                               ## start R programming
 
-IRkernel::installspec()         ## install R kernel
-```
-
-Quit R with `q()` and initiate a new launcher, you will find that the R kernel is available:
+Quit R with `q()` and initiate a new launcher, you will find that the R kernel is available. For more details about how to use R in Jupyter, check this [guide](R_guide.md).
 
 ![image](./img/R_kernel.png)
 
