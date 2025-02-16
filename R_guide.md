@@ -98,15 +98,14 @@ source("utils.R")  # Imports functions from utils.R
 
 - **Save specific variables**:
 
-  ```R
+```R
 save(var1, var2, file = "data.RData")
-  ```
+```
 
 - **Save entire workspace**:
-
-  ```R
+```R
 save.image(file = "workspace.RData")
-  ```
+```
 
 - Load later with `load("workspace.RData")`.
 
