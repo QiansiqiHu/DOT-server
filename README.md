@@ -158,7 +158,7 @@ If you're accessing the server from mainland China, you'll need the CUHK add-on 
 
 Using Jupyter requires no special software other than a browser. Follow the below steps to start your journey with sufficient GPU resources.
 
-1. In your web browser, navigate to `137.189.75.113`. You'll see the following login page:![image](./img/HPC-login.png)
+1. In your web browser, navigate to `137.189.75.113`. You'll see the following login page:![image](./img/hpc-login.png)
 
 2. Enter your username and password to log in. You'll then see options to choose your computing environment. Select the resource configuration that best fits your requirements:
 
@@ -170,13 +170,13 @@ Using Jupyter requires no special software other than a browser. Follow the belo
    | **Medium GPU Instance**   | For mid-sized deep learning tasks with 2 GPUs        | 16 cores          | 48GB        | 2 GPUs            |
    | **Large GPU Instance**    | High-performance setup for large-scale deep learning | 40 cores          | 64GB        | 4 GPUs            |
 
-   ![image](./img/HPC-spawn.png)
+   ![image](./img/hpc-spawn.png)
 
 3. Click "Start" and wait a few seconds for your Jupyter server to start. You'll then see the familiar JupyterLab interface:![image](./img/hpc-jupyter.png)
 
 4. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here]()). Simply click one of the two Python buttons under "Notebook" to begin.
 
-> If you need a customized environment, you can create your own conda environment in a terminal by following the procedures described in the ["Custom Conda Environment"](#Custom Conda Environment) section.
+> If you need a customized environment, you can create your own conda environment in a terminal by following the procedures described in the ["Custom Conda Environment"](#custom-conda-environment) section.
 
 ### Method 2. SSH
 
@@ -187,7 +187,7 @@ SSH connection offers the most powerful and flexible way to work with our GPU se
 1. **Connect to the cluster** - We recommend connecting directly to the compute nodes (137.189.75.114 or 137.189.75.115) rather than the login node, as the compute nodes have significantly more processing power.
 2. **Development environment** - Use VSCode Remote SSH or similar tools for code editing, which provides a familiar interface with syntax highlighting, code completion, and integrated terminal.
 3. Running your code. Two options are provided:
-   - **SLURM jobs (Recommended)**: Use the `sbatch` command to submit jobs with specific resource requirements. This allows for efficient resource allocation and lets your jobs run even when you're disconnected. [Learn more about SLURM commands here](#Running Time-consuming Scripts Efficiently through SLURM).
+   - **SLURM jobs (Recommended)**: Use the `sbatch` command to submit jobs with specific resource requirements. This allows for efficient resource allocation and lets your jobs run even when you're disconnected. [Learn more about SLURM commands here](#running-time-consuming-scripts-efficiently-through-slurm).
    - **Direct execution**: For quick tests, you can run Python scripts directly on the compute nodes.
 
 > **Important:** Please avoid running intensive computational tasks on the login node (137.189.75.113), as it has limited CPU resources and is shared by all users for administrative purposes.
@@ -197,7 +197,7 @@ SSH connection offers the most powerful and flexible way to work with our GPU se
 - For Beginners: We recommend using VSCode, which provides a familiar graphical interface while maintaining all the benefits of SSH connection. It lets you edit code, manage files, and monitor your programs through a single window.
 - For Advanced Users: Command-line SSH gives you complete control over your server environment and may be more efficient for experienced users.
 
-See our detailed [SSH connection guide](https://github.com/QiansiqiHu/DOT-server/blob/main/SSH_access.pdf) for step-by-step instructions for both methods.
+See our detailed [SSH connection guide](./SSH_access.pdf) for step-by-step instructions for both methods.
 
 ## User Tips
 
