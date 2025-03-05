@@ -247,27 +247,41 @@ wget https://example.com/dataset.zip
 
 ### Custom Conda Environment
 
-Use `conda`, an env and lib management toolkit that allows you to have separate workspaces with diff libs equipped. Each user's environments are independent. Open your terminal and follow the below steps to configurate your own environments.
+Use `conda`, an environment and library management toolkit that allows you to have separate workspaces with different libraries equipped. Each user's environments are independent. Open your terminal and follow these steps to configure your own environments.
 
 ```bash
-# Initialize conda for the current session if you don't see the prompt prefix "(base)"
+# Source your .bashrc to initialize conda if you don't see "(base)" in your prompt
 . ~/.bashrc
+conda activate
 
 # The shell prompt will change from:
 username@hostname:~$
 # to:
 (base) username@hostname:~$
 
-# When you activate a specific environment, the prompt prefix will change accordingly:
+# Create a new conda environment with Python and essential packages
+# Important: Always include Python and pip when creating a new environment
+conda create -n myenv python=3.13 pip
+
+# Activate your new environment
+conda activate myenv
+
+# The shell prompt will change to:
 (myenv) username@hostname:~$
 
-# create and configure your conda env
-conda create -n <new-env-name> # create a new env with libs in your current base env
-conda activate <new-env-name> # activate this env
-pip install <package-you-need> # then you can use pip to install new libs you would like to have
+# Before installing packages, verify you're using the correct pip
+which pip
+# Should show: /mnt/disk5/home/username/.conda/envs/myenv/bin/pip
 
-# activate this conda environment as a kernel in your jupyter
-python -m ipykernel install --user --name <new-env-name> --display-name "Python (<new-env-name>)"
+# Install packages in your environment
+pip install package-name
+
+# Verify packages are installed in your conda environment (not in .local)
+pip show package-name
+# Should show path in your conda environment: /mnt/disk5/home/username/.conda/envs/myenv/...
+
+# Add your environment as a Jupyter kernel
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
 
 Some useful conda commands:
@@ -279,10 +293,16 @@ conda remove -n <env-name> --all  # remove an environment
 conda deactivate       # return to base environment
 ```
 
-> Note: Two shared environments are available by default:
+> Note: 
 >
-> - `base`: Basic data analysis environment
-> - `pytorch`: Deep learning environment with PyTorch
+> - Two shared environments are available by default (read-only):
+>
+>   - `base`: Basic data analysis environment
+>
+>   - `pytorch`: Deep learning environment with PyTorch
+>
+> - If packages are installing to `.local` directory instead of your conda environment, check which pip you're using with `which pip`
+> - Always ensure you've activated your environment before installing packages
 
 ### Running Time-consuming Scripts Efficiently through SLURM
 
