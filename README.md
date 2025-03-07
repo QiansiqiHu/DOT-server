@@ -17,14 +17,13 @@
 > IP address 137.189.75.115 is currently inaccessible from campus network (both browser and SSH connections affected). We are working with IT staff to identify and > resolve the connectivity issue. We will notify all users once service is restored.
 
 
----
 
 This repository provides an overview of servers in the Department of Decisions, Operations and Technology, CUHK Business School, including two GPU servers for computation and one server for storage and login (IP address: 137.189.75.113). 
 
 The cluster is designed to support research requiring significant computational resources, such as machine learning, data analytics, optimization algorithms, and simulation modeling. With a total of 16 high-performance GPUs, 128 CPU threads, and 144TB of storage, the system provides (relatively) substantial computing power for department research needs.
 
-> IMPORTANT: For now, only the faculty and PhD Students of the Department of Decisions, Operations and Technology are allowed to apply for an account. If you are a CUHK affiliate, please ask your collaborating faculty of the DOT department to apply for an account on your behalf.
->
+> [!IMPORTANT]
+> For now, only the faculty and PhD Students of the Department of Decisions, Operations and Technology are allowed to apply for an account. If you are a CUHK affiliate, please ask your collaborating faculty of the DOT department to apply for an account on your behalf.
 
 Our HPC system follows a shared resource model that balances flexibility with efficiency:
 
@@ -33,6 +32,11 @@ Our HPC system follows a shared resource model that balances flexibility with ef
 - A unified file system allows seamless access to your files from any node in the cluster
 
 If you encounter any issues with the system or have specific customization requests, please contact the administrator via [this support form](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). We maintain a regularly updated [troubleshooting document](https://github.com/QiansiqiHu/DOT-server/blob/main/Jupyter_env.pdf) that addresses common installation and configuration issues.
+
+## Quick Start
+
+Go to ["Using the HPC Cluster"](#using-the-hpc-cluster) directly and follow [Method 1](#method-1.-Web-Access-(JupyterHub)) to use Python and R.
+
 
 ## Our HPC Cluster
 
@@ -45,6 +49,7 @@ Here’s a summary of the total computing resources available in our HPC cluster
 | GPU              | 16 NVIDIA RTX 4090           |
 | Storage          | 144 TB (18TB × 8 drives)     |
 | Operating System | Ubuntu 22.04.4 LTS           |
+
 
 ### Components
 
@@ -98,7 +103,10 @@ flowchart TD
 
 You will spend most of your time interacting with our **login node (113)**, including using JupyterLab and uploading your files and codes. As all nodes share a common file system, your files will be available everywhere even though you are only uploading them to a login node.
 
-**💡 Tip for SSH Users:** If you are comfortable using SSH to connect to servers and prefer a straightforward approach without needing to learn advanced resource management tools like SLURM (which involves learning costs of using `srun` and `sbatch` commands to send your computation tasks to available compute nodes), you can directly use these compute nodes for your experiments.   
+
+> [!TIP] 
+> For SSH Users: If you are comfortable using SSH to connect to servers and prefer a straightforward approach without needing to learn advanced resource management tools like SLURM (which involves learning costs of using `srun` and `sbatch` commands to send your computation tasks to available compute nodes), you can directly use these compute nodes for your experiments.   
+
 
 #### Compute Nodes (137.189.75.114 & 137.189.75.115)
 
@@ -158,24 +166,30 @@ If you're accessing the server from mainland China, you'll need the CUHK add-on 
 
 Using Jupyter requires no special software other than a browser. Follow the below steps to start your journey with sufficient GPU resources.
 
-1. In your web browser, navigate to `137.189.75.113`. You'll see the following login page:![image](./img/hpc-login.png)
+1. In your web browser, navigate to `137.189.75.113`. You'll see the following login page:
+
+![image](./img/hpc-login.png)
 
 2. Enter your username and password to log in. You'll then see options to choose your computing environment. Select the resource configuration that best fits your requirements:
 
-   | Option                    | **Description**                                      | **Max CPU Power** | **Max RAM** | **GPU Available** |
-   | ------------------------- | ---------------------------------------------------- | ----------------- | ----------- | ----------------- |
-   | **Standard CPU Instance** | Suitable for general data analysis and computations  | 12 cores          | 32GB        | No GPU            |
-   | **High-Performance CPU**  | For large-scale computing and intensive data tasks   | 32 cores          | 64GB        | No GPU            |
-   | **Small GPU Instance**    | Designed for deep learning with a single GPU         | 8 cores           | 32GB        | 1 GPU             |
-   | **Medium GPU Instance**   | For mid-sized deep learning tasks with 2 GPUs        | 16 cores          | 48GB        | 2 GPUs            |
-   | **Large GPU Instance**    | High-performance setup for large-scale deep learning | 40 cores          | 64GB        | 4 GPUs            |
 
-   ![image](./img/hpc-spawn.png)
+| Option                    | **Description**                                      | **Max CPU Power** | **Max RAM** | **GPU Available** |
+| ------------------------- | ---------------------------------------------------- | ----------------- | ----------- | ----------------- |
+| **Standard CPU Instance** | Suitable for general data analysis and computations  | 12 cores          | 32GB        | No GPU            |
+| **High-Performance CPU**  | For large-scale computing and intensive data tasks   | 32 cores          | 64GB        | No GPU            |
+| **Small GPU Instance**    | Designed for deep learning with a single GPU         | 8 cores           | 32GB        | 1 GPU             |
+| **Medium GPU Instance**   | For mid-sized deep learning tasks with 2 GPUs        | 16 cores          | 48GB        | 2 GPUs            |
+| **Large GPU Instance**    | High-performance setup for large-scale deep learning | 40 cores          | 64GB        | 4 GPUs            |
 
-3. Click "Start" and wait a few seconds for your Jupyter server to start. You'll then see the familiar JupyterLab interface:![image](./img/hpc-jupyter.png)
+![image](./img/hpc-spawn.png)
+
+3. Click "Start" and wait a few seconds for your Jupyter server to start. You'll then see the familiar JupyterLab interface:
+
+![image](./img/hpc-jupyter.png)
 
 4. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here]()). Simply click one of the two Python buttons under "Notebook" to begin.
 
+> [!TIP]
 > If you need a customized environment, you can create your own conda environment in a terminal by following the procedures described in the ["Custom Conda Environment"](#custom-conda-environment) section.
 
 ### Method 2. SSH
@@ -190,7 +204,8 @@ SSH connection offers the most powerful and flexible way to work with our GPU se
    - **SLURM jobs (Recommended)**: Use the `sbatch` command to submit jobs with specific resource requirements. This allows for efficient resource allocation and lets your jobs run even when you're disconnected. [Learn more about SLURM commands here](#running-time-consuming-scripts-efficiently-through-slurm).
    - **Direct execution**: For quick tests, you can run Python scripts directly on the compute nodes.
 
-> **Important:** Please avoid running intensive computational tasks on the login node (137.189.75.113), as it has limited CPU resources and is shared by all users for administrative purposes.
+> [!IMPORTANT]
+> Please avoid running intensive computational tasks on the login node (137.189.75.113), as it has limited CPU resources and is shared by all users for administrative purposes.
 
 #### Connection Methods
 
@@ -199,12 +214,13 @@ SSH connection offers the most powerful and flexible way to work with our GPU se
 
 See our detailed [SSH connection guide](./SSH_access.pdf) for step-by-step instructions for both methods.
 
-## User Tips
+## Tips for Users
 
 ### File Storage and Transfer
 
 Each user has a dedicated home directory located at `/mnt/disk5/home/username`. We've unified the storage system so you'll automatically access the same home directory whether connecting through SSH or JupyterHub on any node in our HPC cluster. This eliminates previous confusion with separate folders for different access methods.
 
+> [!NOTE]
 > **Storage Limit:** While we will start to conduct weekly backups of your files for data protection, each user has a 2TB storage limit. This ensures optimal performance for all users sharing the cluster resources.
 
 #### Using JupyterHub (Beginner-Friendly)
@@ -234,7 +250,8 @@ scp data.csv xinyuli@137.189.75.115:/mnt/disk5/home/xinyuli/datafolder
 scp -r codes/ xinyuli@137.189.75.115:/mnt/disk5/home/xinyuli/project/
 ```
 
-> *Note: Replace 'username' and 'server' with your actual login credentials and server address.*
+> [!NOTE]
+> Replace 'username' and 'server' with your actual login credentials and server address.
 
 #### Alternative Methods
 
@@ -280,7 +297,7 @@ pip install package-name
 pip show package-name
 # Should show path in your conda environment: /mnt/disk5/home/username/.conda/envs/myenv/...
 
-# Add your environment as a Jupyter kernel
+# Add your environment as a Jupyter kernel (run this command in base env)
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
 
@@ -293,7 +310,7 @@ conda remove -n <env-name> --all  # remove an environment
 conda deactivate       # return to base environment
 ```
 
-> Note: 
+> [!NOTE] 
 >
 > - Two shared environments are available by default (read-only):
 >
@@ -308,7 +325,9 @@ conda deactivate       # return to base environment
 
 SLURM (Simple Linux Utility for Resource Management) is a job scheduling system designed for HPC clusters. Its primary purpose is to efficiently allocate resources and prevent competition for computing power when multiple users run jobs simultaneously.
 
-> **Note:** Using SLURM is **recommended but optional** for users who want more stable and flexible resource assignment. It's particularly valuable for long-running tasks and jobs requiring specific GPU allocations.
+> [!NOTE] 
+>
+> Using SLURM is **recommended but optional** for users who want more stable and flexible resource assignment. It's particularly valuable for long-running tasks and jobs requiring specific GPU allocations.
 >
 > If your code requires GPU resources or will run for extended periods, we highly recommend using SLURM. It ensures your tasks run smoothly without resource conflicts and allows you to disconnect while your job continues running. 
 
@@ -331,7 +350,8 @@ python /path/to/your/script.py
 
 The `#SBATCH` lines specify resource requests and job parameters. For more options, see [this cheatsheet](https://slurm.schedmd.com/pdfs/summary.pdf).
 
-> **Tips on GPU Resources Requests:** To request specific GPU resources, add:
+> [!TIP]
+> To request specific GPU resources, add:
 >
 > - `--gres=gpu:n` for n GPU
 >
@@ -345,7 +365,8 @@ The `#SBATCH` lines specify resource requests and job parameters. For more optio
 
 Your code will run based on available resources, even if you disconnect from the cluster. The maximum job duration is 5 days.
 
-> **💡Note on Environment:** When you connect via SSH, you'll be in the base conda environment by default. SLURM jobs will run in your currently activated conda environment, so make sure to activate the appropriate environment before submitting jobs if needed.
+> [!NOTE]
+> When you connect via SSH, you'll be in the base conda environment by default. SLURM jobs will run in your currently activated conda environment, so make sure to activate the appropriate environment before submitting jobs if needed.
 
 3. Monitor your job:
 
@@ -360,7 +381,10 @@ Your code will run based on available resources, even if you disconnect from the
    srun --gres=gpu:1 --pty bash    # Get an interactive shell with 1 GPU
    ```
 
-> Limits of  `srun`: The `srun` command creates an interactive session that requires you to stay connected. If your SSH connection drops, your job will terminate immediately. For longer tasks or when you need to disconnect, always use `sbatch` instead.
+> [!NOTE]
+> The `srun` command creates an interactive session that requires you to stay connected. If your SSH connection drops, your job will terminate immediately. For longer tasks or when you need to disconnect, always use `sbatch` instead.
+
+
 
 ## Contact
 
