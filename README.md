@@ -24,14 +24,14 @@ If you encounter any issues with the system or have specific customization reque
 > **Latest Update on Server Status:**
 >
 > [March 3, 2025]
-> We have completed the service upgrade and data migration. Our new high-performance computing (HPC) cluster now integrates the computational resources of two GPU servers with a centralized storage and management system. Existing users can access the cluster through IP address 137.189.75.113 via web browser (JupyterHub) or SSH connections. To minimize disruption, we've created backups of your previous working folders. You can find these backups as a compressed archive or a folder with timestamps indicating when they were created.
+> We have completed the service upgrade and data migration. Our new high-performance computing (HPC) cluster now integrates the computational resources of two GPU servers with a centralized storage and management system. Existing users can access the cluster through IP address 137.189.75.113 via web browser (JupyterHub) or SSH connections. To minimize disruption, we've created backups of your previous working folders. You can find these backups as a compressed archive or a folder with timestamps indicating when they were created. If no major issues arise during the **pilot phase (by Mar 23)**, we plan to discontinue the existing JupyterHub service on 115.
 >
 > [January 20, 2025]
 > The server (137.189.75.115) has been successfully restored. All services are up and running.
 >
 > [January 18, 2025]
 > IP address 137.189.75.115 is currently inaccessible from campus network (both browser and SSH connections affected). We are working with IT staff to identify and > resolve the connectivity issue. We will notify all users once service is restored.
-<br></br>
+> <br></br>
 
 ## Quick Start
 
@@ -187,7 +187,7 @@ Using Jupyter requires no special software other than a browser. Follow the belo
 
 ![image](./img/hpc-jupyter.png)
 
-4. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here]()). Simply click one of the two Python buttons under "Notebook" to begin.
+4. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here](./conda_envs.md)). Simply click one of the two Python buttons under "Notebook" to begin.
 
 > [!TIP]
 > If you need a customized environment, you can create your own conda environment in a terminal by following the procedures described in the ["Custom Conda Environment"](#custom-conda-environment) section.
