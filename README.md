@@ -1,8 +1,7 @@
 # CUHK Business School DOT HPC
 
+
 [[**Create Account / Reset Password**](https://forms.gle/ghY9dEvQY1548kmK7)] [[**Report Issue**](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link)] [[**Deposit Datasets on CUHK Data Repository**](https://github.com/qcbegin/cuhkbiz-data-repo-guide)]
-
-
 
 
 > **Latest Update on Server Status:**
