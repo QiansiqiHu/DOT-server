@@ -2,18 +2,7 @@
 
 
 [[**Create Account / Reset Password**](https://forms.gle/ghY9dEvQY1548kmK7)] [[**Report Issue**](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link)] [[**Deposit Datasets on CUHK Data Repository**](https://github.com/qcbegin/cuhkbiz-data-repo-guide)]
-
-
-> **Latest Update on Server Status:**
->
-> [March 3, 2025]
-> We have completed the service upgrade and data migration. Our new high-performance computing (HPC) cluster now integrates the computational resources of two GPU servers with a centralized storage and management system. Existing users can access the cluster through IP address 137.189.75.113 via web browser (JupyterHub) or SSH connections. To minimize disruption, we've created backups of your previous working folders. You can find these backups as a compressed archive or a folder with timestamps indicating when they were created.
->
-> [January 20, 2025]
-> The server (137.189.75.115) has been successfully restored. All services are up and running.
->
-> [January 18, 2025]
-> IP address 137.189.75.115 is currently inaccessible from campus network (both browser and SSH connections affected). We are working with IT staff to identify and > resolve the connectivity issue. We will notify all users once service is restored.
+<br></br>
 
 
 
@@ -31,6 +20,18 @@ Our HPC system follows a shared resource model that balances flexibility with ef
 - A unified file system allows seamless access to your files from any node in the cluster
 
 If you encounter any issues with the system or have specific customization requests, please contact the administrator via [this support form](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). We maintain a regularly updated [troubleshooting document](https://github.com/QiansiqiHu/DOT-server/blob/main/Jupyter_env.pdf) that addresses common installation and configuration issues.
+<br></br>
+> **Latest Update on Server Status:**
+>
+> [March 3, 2025]
+> We have completed the service upgrade and data migration. Our new high-performance computing (HPC) cluster now integrates the computational resources of two GPU servers with a centralized storage and management system. Existing users can access the cluster through IP address 137.189.75.113 via web browser (JupyterHub) or SSH connections. To minimize disruption, we've created backups of your previous working folders. You can find these backups as a compressed archive or a folder with timestamps indicating when they were created.
+>
+> [January 20, 2025]
+> The server (137.189.75.115) has been successfully restored. All services are up and running.
+>
+> [January 18, 2025]
+> IP address 137.189.75.115 is currently inaccessible from campus network (both browser and SSH connections affected). We are working with IT staff to identify and > resolve the connectivity issue. We will notify all users once service is restored.
+<br></br>
 
 ## Quick Start
 
