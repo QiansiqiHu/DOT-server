@@ -299,7 +299,8 @@ For detailed usage instructions, see the [Slurm official documentation](https://
 #SBATCH --job-name=my_task       # Name for your job
 #SBATCH --ntasks=1               # Number of tasks
 #SBATCH --cpus-per-task=2        # CPUs per task
-#SBATCH --gres=gpu:1             # Request 1 GPU
+#SBATCH --gres=gpu:1             # Request 1 GPU per node
+#SBATCH --nodes=2								 # Request 2 compute nodes
 #SBATCH --time=2-00:00:00        # Request 2 days runtime (D-HH:MM:SS)
 #SBATCH --output=%j_output.log   # Save output to a log file
 
@@ -312,7 +313,10 @@ The `#SBATCH` lines specify resource requests and job parameters. For more optio
 > [!TIP]
 > To request specific GPU resources, add:
 >
-> - `--gres=gpu:n` for n GPU
+> - `--gres=gpu:n` for n GPU per node
+> - `--nodes=2` for 2 compute nodes
+>
+> The combination of the above two commands requests n*2=2n GPUs. For each user, we currently allow up to 12 GPUs.
 >
 > When requesting multiple GPUs with SLURM, your Python code must be configured to use them. For PyTorch users, you'll need to explicitly enable multi-GPU training (using `nn.DataParallel`, `nn.parallel.DistributedDataParallel`
 
@@ -337,7 +341,7 @@ Your code will run based on available resources, even if you disconnect from the
 4. Alternative for shorter tasks: For quick tests or interactive sessions, you can use:
 
    ```bash
-   srun --gres=gpu:1 --pty bash    # Get an interactive shell with 1 GPU
+   srun --gres=gpu:1 --pty bash    # Get an interactive shell with 1 GPU from a single node
    ```
 
 > [!NOTE]
