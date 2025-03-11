@@ -58,48 +58,7 @@ Our cluster consists of two types of computer servers at this moment:
 - *Login nodes* handle user login, light computation, and storage.
 - *Compute nodes* handle heavy computation.
 
-```mermaid
-flowchart TD
-    User(["👥 Users"])
-    
-    subgraph Cluster["HPC Cluster"]
-        Login["💻 Login Node \(137.189.75.113)"]
-        
-        subgraph Compute["Compute Resources"]
-            direction LR
-            Compute1["🖥️ Compute Node 1 \(137.189.75.114)"]
-            Compute2["🖥️ Compute Node 2 \(137.189.75.115)"]
-        end
-        
-        Storage["💾 Shared File System(144TB total)"]
-        
-        Login --- Storage
-        Compute1 --- Storage
-        Compute2 --- Storage
-        
-        Login -->|"SLURM Scheduler"| Compute1
-        Login -->|"SLURM Scheduler"| Compute2
-    end
-    
-    %% Connection lines from user to nodes
-    User -->|"JupyterHub Web Interface"| Login
-    User -->|"SSH(not recommended)"| Login
-    User -.->|"Direct SSH(recommended)"| Compute1
-    User -.->|"Direct SSH (recommended)"| Compute2
-    
-    %% Styling
-    classDef userNode fill:#d5f5e3,stroke:#333,stroke-width:1px
-    classDef loginNode fill:#f9d5e5,stroke:#333,stroke-width:1px
-    classDef computeNode fill:#eeeeee,stroke:#333,stroke-width:1px
-    classDef storageNode fill:#d0e8f2,stroke:#333,stroke-width:1px
-    classDef clusterBox fill:#f5f5f5,stroke:#333,stroke-width:1px,stroke-dasharray:5 5
-    
-    class User userNode
-    class Login loginNode
-    class Compute1,Compute2 computeNode
-    class Storage storageNode
-    class Cluster clusterBox
-```
+![HPC-architecture](./img/architecture.png)
 
 You will spend most of your time interacting with our **login node (113)**, including using JupyterLab and uploading your files and codes. As all nodes share a common file system, your files will be available everywhere even though you are only uploading them to a login node.
 
