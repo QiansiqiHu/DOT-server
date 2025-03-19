@@ -23,6 +23,9 @@ If you encounter any issues with the system or have specific customization reque
 <br></br>
 > **Latest Update on Server Status:**
 > 
+> [March 19, 2025]
+> GPU card issue resolved: The previously missing GPU card is now functioning properly. We apologize for any inconvenience caused by the unexpected server shutdown resulting from our miscommunication.
+> 
 > [March 18, 2025]
 > We've identified that one GPU card is missing from node 115. Our team is currently working with IT staff to inspect the physical connection. Once we identify the issue, a system reboot may be necessary. We will notify all users before any scheduled downtime.
 > 
@@ -158,6 +161,9 @@ Using Jupyter requires no special software other than a browser. Follow the belo
 
 SSH connection offers the most powerful and flexible way to work with our GPU servers, especially for computationally-intensive research projects. The same username and password will be used.
 
+> [!NOTE]
+> If you choose to bypass our web-based JupyterHub service and connect via SSH directly, please first launch JupyterHub once to initialize the conda environments. Without this step, you may encounter errors indicating that the conda command or `.bashrc` file cannot be found.
+
 #### Recommended SSH Workflow
 
 1. **Connect to the cluster** - We recommend connecting directly to the compute nodes (137.189.75.114 or 137.189.75.115) rather than the login node, as the compute nodes have significantly more processing power.
@@ -230,6 +236,8 @@ Use `conda`, an environment and library management toolkit that allows you to ha
 
 ```bash
 # Source your .bashrc to initialize conda if you don't see "(base)" in your prompt
+# Please first launch JupyterHub once to initialize the conda environments.
+# Without this step, you may encounter errors indicating that the conda command or `.bashrc` file cannot be found.
 . ~/.bashrc
 conda activate
 
