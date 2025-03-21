@@ -137,7 +137,6 @@ Using Jupyter requires no special software other than a browser. Follow the belo
 
 2. Enter your username and password to log in. You'll then see options to choose your computing environment. Select the resource configuration that best fits your requirements:
 
-
 | Option                    | **Description**                                      | **Max CPU Power** | **Max RAM** | **GPU Available** |
 | ------------------------- | ---------------------------------------------------- | ----------------- | ----------- | ----------------- |
 | **Standard CPU Instance** | Suitable for general data analysis and computations  | 12 cores          | 32GB        | No GPU            |
@@ -151,6 +150,9 @@ Using Jupyter requires no special software other than a browser. Follow the belo
 3. Click "Start" and wait a few seconds for your Jupyter server to start. You'll then see the familiar JupyterLab interface:
 
 ![image](./img/hpc-jupyter.png)
+
+> [!NOTE]
+> You may see a `"Pending in Queue"` message. This indicates that your requested resources are not currently available. You can either select a lighter resource option or wait until you receive a notification that your server is ready.
 
 4. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here](./conda_envs.md)). Simply click one of the two Python buttons under "Notebook" to begin.
 
@@ -237,7 +239,8 @@ Use `conda`, an environment and library management toolkit that allows you to ha
 ```bash
 # Source your .bashrc to initialize conda if you don't see "(base)" in your prompt
 # Please first launch JupyterHub once to initialize the conda environments.
-# Without this step, you may encounter errors indicating that the conda command or `.bashrc` file cannot be found.
+# Without this step, you may encounter errors indicating that `.bashrc` file cannot be found.
+# Add conda to your PATH if it is not available: export PATH="/mnt/disk5/software/miniconda3/bin:$PATH"`
 . ~/.bashrc
 conda activate
 
