@@ -22,13 +22,16 @@ Our HPC system follows a shared resource model that balances flexibility with ef
 If you encounter any issues with the system or have specific customization requests, please contact the administrator via [this support form](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). We maintain a regularly updated [troubleshooting document](https://github.com/QiansiqiHu/DOT-server/blob/main/Jupyter_env.pdf) that addresses common installation and configuration issues.
 <br></br>
 > **Latest Update on Server Status:**
-> 
+>
+> [March 24, 2025]
+> The old JupyterHub service on 115 has been shut down. Please stop using the old login credentials and switch to the new ones instead. The JupyterHub service on 113 is now operational after its scheduled maintenance period (1:30 - 2:00 PM).
+>
 > [March 19, 2025]
 > GPU card issue resolved: The previously missing GPU card is now functioning properly. We apologize for any inconvenience caused by the unexpected server shutdown resulting from our miscommunication.
-> 
+>
 > [March 18, 2025]
 > We've identified that one GPU card is missing from node 115. Our team is currently working with IT staff to inspect the physical connection. Once we identify the issue, a system reboot may be necessary. We will notify all users before any scheduled downtime.
-> 
+>
 > [March 3, 2025]
 > We have completed the service upgrade and data migration. Our new high-performance computing (HPC) cluster now integrates the computational resources of two GPU servers with a centralized storage and management system. Existing users can access the cluster through IP address 137.189.75.113 via web browser (JupyterHub) or SSH connections. To minimize disruption, we've created backups of your previous working folders. You can find these backups as a compressed archive or a folder with timestamps indicating when they were created. If no major issues arise during the **pilot phase (by Mar 23)**, we plan to discontinue the existing JupyterHub service on 115.
 >
@@ -129,32 +132,43 @@ If you're accessing the server from mainland China, you'll need the CUHK add-on 
 
 ### Method 1. Web Access (JupyterHub)
 
-Using Jupyter requires no special software other than a browser. Follow the below steps to start your journey with sufficient GPU resources.
+Using Jupyter requires only a browser—no special software installation needed. Follow these steps to begin working with our GPU resources:
+
+> [!Note]
+>
+> Each user's Jupyter server will automatically terminate after 3 days. For longer tasks that may exceed this time limit, we recommend either: adding periodic save points in your scripts, or using Method 2 (SSH connection) instead, which doesn't have this time limitation.
 
 1. In your web browser, navigate to `137.189.75.113`. You'll see the following login page:
 
 ![image](./img/hpc-login.png)
 
-2. Enter your username and password to log in. You'll then see options to choose your computing environment. Select the resource configuration that best fits your requirements:
-
-| Option                    | **Description**                                      | **Max CPU Power** | **Max RAM** | **GPU Available** |
-| ------------------------- | ---------------------------------------------------- | ----------------- | ----------- | ----------------- |
-| **Standard CPU Instance** | Suitable for general data analysis and computations  | 12 cores          | 32GB        | No GPU            |
-| **High-Performance CPU**  | For large-scale computing and intensive data tasks   | 32 cores          | 64GB        | No GPU            |
-| **Small GPU Instance**    | Designed for deep learning with a single GPU         | 8 cores           | 32GB        | 1 GPU             |
-| **Medium GPU Instance**   | For mid-sized deep learning tasks with 2 GPUs        | 16 cores          | 48GB        | 2 GPUs            |
-| **Large GPU Instance**    | High-performance setup for large-scale deep learning | 40 cores          | 64GB        | 4 GPUs            |
-
-![image](./img/hpc-spawn.png)
-
-3. Click "Start" and wait a few seconds for your Jupyter server to start. You'll then see the familiar JupyterLab interface:
-
-![image](./img/hpc-jupyter.png)
+2. Enter your username and password to log in. Wait a few seconds for your Jupyter server to start. You'll then see the familiar JupyterLab interface:
 
 > [!NOTE]
 > You may see a `"Pending in Queue"` message. This indicates that your requested resources are not currently available. You can either select a lighter resource option or wait until you receive a notification that your server is ready.
 
-4. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here](./conda_envs.md)). Simply click one of the two Python buttons under "Notebook" to begin.
+![image](./img/hpc-jupyter.png)
+
+By default, a **Standard CPU** setup will be automatically selected. If you would like to use other options, follow these steps:
+
+1. Click "File -> Hub Control Panel" to access the server control page
+2. Click "Stop My Server"
+3. Then click "Start My Server"
+4. You'll now see various computing environment options
+5. Select the resource configuration that best fits your requirements
+
+| Option                    | **Description**                                      | **Max CPU Power** | **Max RAM** | **GPU Available** |
+| ------------------------- | ---------------------------------------------------- | ----------------- | ----------- | ----------------- |
+| **Standard CPU Instance** | Suitable for general data analysis and computations  | 8 cores           | 32GB        | No GPU            |
+| **High-Performance CPU**  | For large-scale computing and intensive data tasks   | 32 cores          | 64GB        | No GPU            |
+| **Small GPU Instance**    | Designed for deep learning with a single GPU         | 8 cores           | 32GB        | 1 GPU             |
+| **Medium GPU Instance**   | For mid-sized deep learning tasks with 2 GPUs        | 16 cores          | 48GB        | 2 GPUs            |
+| **Large GPU Instance**    | High-performance setup for large-scale deep learning | 32 cores          | 64GB        | 4 GPUs            |
+
+![image](./img/hpc-spawn-0.png)
+![image](./img/hpc-spawn.png)
+
+3. You're now ready to start coding! We've provided two pre-configured conda environments for easy access (see installed libraries [here](./conda_envs.md)). Simply click one of the two Python buttons under "Notebook" to begin.
 
 > [!TIP]
 > If you need a customized environment, you can create your own conda environment in a terminal by following the procedures described in the ["Custom Conda Environment"](#custom-conda-environment) section.
