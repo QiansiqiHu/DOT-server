@@ -23,6 +23,9 @@ If you encounter any issues with the system or have specific customization reque
 <br></br>
 > **Latest Update on Server Status:**
 >
+> [May 7, 2025]
+> Our GPU servers have been unavailable for the past two days. Users who logged in may have been unable to access their notebooks (always pending in queue). We're pleased to report that one server is now operational and JupyterHub access has been restored. We will notify all users when server 115 returns to service.
+>
 > [March 24, 2025]
 > The old JupyterHub service on 115 has been shut down. Please stop using the old login credentials and switch to the new ones instead. The JupyterHub service on 113 is now operational after its scheduled maintenance period (1:30 - 2:00 PM).
 >
