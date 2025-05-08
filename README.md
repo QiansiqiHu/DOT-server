@@ -23,6 +23,9 @@ If you encounter any issues with the system or have specific customization reque
 <br></br>
 > **Latest Update on Server Status:**
 >
+> [May 8, 2025]
+> All the nodes are back to service.
+>
 > [May 7, 2025]
 > Our GPU servers have been unavailable for the past two days. Users who logged in may have been unable to access their notebooks (always pending in queue). We're pleased to report that one server is now operational and JupyterHub access has been restored. We will notify all users when server 115 returns to service.
 >
