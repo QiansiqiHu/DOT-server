@@ -22,6 +22,8 @@ Our HPC system follows a shared resource model that balances flexibility with ef
 If you encounter any issues with the system or have specific customization requests, please contact the administrator via [this support form](https://docs.google.com/forms/d/e/1FAIpQLSfEhb-JFyDJY4YJZTm_8JhlqI9xnspSksopMaF1Cem5TAclyw/viewform?usp=sf_link). We maintain a regularly updated [troubleshooting document](https://github.com/QiansiqiHu/DOT-server/blob/main/Jupyter_env.pdf) that addresses common installation and configuration issues.
 <br></br>
 > **Latest Update on Server Status:**
+> [July 2, 2025]
+> The maintenance on server 114 has been completed, and all services have returned to normal operation.
 >
 > [May 8, 2025]
 > All the nodes are back to service.
