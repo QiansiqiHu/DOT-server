@@ -23,6 +23,12 @@ If you encounter any issues with the system or have specific customization reque
 <br></br>
 > **Latest Update on Server Status:**
 > 
+> [July 21, 2025]
+> Server 114 is back online with 8 GPU cards available for use.
+>
+> [July 14, 2025]
+> The maintenance on server 114 has been completed, and 7 GPU cards are now available for use. Another maintenance to identify the issue with the problematic GPU card (bus address: 0000:3F:00.0) is planned in the near future.
+> 
 > [July 2, 2025]
 > The maintenance on server 114 has been completed, and all services have returned to normal operation.
 >
